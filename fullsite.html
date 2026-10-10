@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Hoist - Professional SEO & Digital Marketing Services | Freelance Expert</title>
+    <meta name="description" content="Expert freelance digital marketing services: SEO, SEM, Google Ads, Social Media Marketing. Boost your rankings with Rank Hoist - your trusted freelance partner.">
+    <meta name="keywords" content="SEO services, SEM, Google Ads, social media marketing, freelance digital marketing, website optimization, Rank Hoist">
+    <meta name="author" content="Rank Hoist">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rankhoist.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rank Hoist - Professional Digital Marketing Services">
+    <meta property="og:description" content="Expert freelance digital marketing services: SEO, SEM, Google Ads, Social Media Marketing. Free consultation available!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rankhoist.com">
+    <meta property="og:image" content="https://rankhoist.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rank Hoist - Professional Digital Marketing Services">
+    <meta name="twitter:description" content="Expert freelance digital marketing services: SEO, SEM, Google Ads, Social Media Marketing. Free consultation available!">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Rank Hoist",
+      "description": "Professional digital marketing services including SEO, SEM, Google Ads, and social media marketing",
+      "url": "https://rankhoist.com",
+      "email": "moon.gandhi123@gmail.com",
+      "serviceType": "SEO Services",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SEO Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "On-Page SEO",
+              "description": "Keyword optimization, meta tags, content optimization, internal linking"
+            },
+            "price": "299",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Off-Page SEO",
+              "description": "Link building, guest posting, social signals, brand mentions"
+            },
+            "price": "499",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technical SEO",
+              "description": "Site speed optimization, mobile optimization, schema markup"
+            },
+            "price": "399",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce SEO",
+              "description": "Product optimization, category pages, shopping feeds"
+            },
+            "price": "699",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(20, 184, 166, 0.15);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .teal-accent {
+            color: #14b8a6;
+        }
+        .teal-bg {
+            background-color: #14b8a6;
+        }
+        .teal-bg:hover {
+            background-color: #0d9488;
+        }
+        .teal-border {
+            border-color: #14b8a6;
+        }
+        .teal-focus:focus {
+            border-color: #14b8a6;
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #14b8a6;
+            transform: translateY(-2px);
+        }
+        .social-btn {
+            transition: all 0.3s ease;
+        }
+        .social-btn:hover {
+            transform: scale(1.1);
+        }
+        .service-card {
+            background: linear-gradient(145deg, #374151, #4b5563);
+            border: 1px solid #6b7280;
+        }
+        .service-card:hover {
+            border-color: #14b8a6;
+            background: linear-gradient(145deg, #4b5563, #374151);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold">🚀 <span class="teal-accent">Rank Hoist</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" onclick="showPage('home')" class="nav-link text-white hover:text-teal-400">Home</a>
+                    <a href="#" onclick="showPage('services')" class="nav-link text-white hover:text-teal-400">Services</a>
+                    <a href="#" onclick="showPage('contact')" class="nav-link text-white hover:text-teal-400">Contact</a>
+                    <a href="#" onclick="showPage('social')" class="nav-link text-white hover:text-teal-400">Social</a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="#" onclick="showPage('home')" class="block py-2 text-white hover:text-teal-400">Home</a>
+                <a href="#" onclick="showPage('services')" class="block py-2 text-white hover:text-teal-400">Services</a>
+                <a href="#" onclick="showPage('contact')" class="block py-2 text-white hover:text-teal-400">Contact</a>
+                <a href="#" onclick="showPage('social')" class="block py-2 text-white hover:text-teal-400">Social</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <!-- Hero Section -->
+        <section class="gradient-bg py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-6xl font-bold mb-6">🚀 <span class="teal-accent">Rank Hoist</span></h1>
+                <p class="text-2xl mb-4 text-gray-300">Expert Digital Marketing Services</p>
+                <p class="text-lg mb-8 text-gray-400 max-w-2xl mx-auto">Professional SEO, SEM, and Social Media Marketing to boost your online presence and drive real results</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button onclick="showPage('services')" class="teal-bg hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                        View Services
+                    </button>
+                    <button onclick="showPage('contact')" class="bg-transparent border-2 border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                        Get Free Quote
+                    </button>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">📈</div>
+                        <h3 class="text-xl font-bold mb-2 teal-accent">150%+ Growth</h3>
+                        <p class="text-gray-300">Average traffic increase within 6 months</p>
+                    </div>
+                    <div class="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="text-xl font-bold mb-2 teal-accent">24hr Response</h3>
+                        <p class="text-gray-300">Quick turnaround on all inquiries</p>
+                    </div>
+                    <div class="bg-slate-800 bg-opacity-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-3">🎯</div>
+                        <h3 class="text-xl font-bold mb-2 teal-accent">Proven Results</h3>
+                        <p class="text-gray-300">Data-driven strategies that work</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Services Overview -->
+        <section class="py-16 bg-slate-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Our <span class="teal-accent">Core Services</span></h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-5xl mb-4">🔍</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">SEO Services</h3>
+                        <p class="text-gray-300 mb-4">Organic search optimization for long-term growth</p>
+                        <p class="text-lg font-semibold">Starting at $299/mo</p>
+                    </div>
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-5xl mb-4">🎯</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">SEM/PPC Ads</h3>
+                        <p class="text-gray-300 mb-4">Paid advertising for instant results</p>
+                        <p class="text-lg font-semibold">Starting at $499/mo</p>
+                    </div>
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-5xl mb-4">📱</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">Social Media</h3>
+                        <p class="text-gray-300 mb-4">Complete social media management</p>
+                        <p class="text-lg font-semibold">Starting at $399/mo</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <button onclick="showPage('services')" class="teal-bg hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300">
+                        View All Services
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="servicesPage" class="page">
+        <div class="py-16 bg-slate-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold mb-6">Our <span class="teal-accent">Services</span></h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Comprehensive digital marketing solutions to grow your business online</p>
+                </div>
+
+                <!-- Service Categories -->
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- SEO Services -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-8">
+                            <div class="text-6xl mb-4">🔍</div>
+                            <h2 class="text-3xl font-bold teal-accent mb-4">SEO Services</h2>
+                            <p class="text-gray-300">Organic search optimization for long-term growth</p>
+                        </div>
+                        
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">On-Page SEO</h3>
+                            <p class="text-gray-300 text-sm mb-4">Complete website optimization for search engines</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Keyword research & optimization</li>
+                                <li>• Meta tags & content optimization</li>
+                                <li>• Internal linking structure</li>
+                            </ul>
+                            <div class="text-2xl font-bold teal-accent">$299/mo</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Off-Page SEO</h3>
+                            <p class="text-gray-300 text-sm mb-4">Build authority through quality backlinks</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Link building campaigns</li>
+                                <li>• Guest posting outreach</li>
+                                <li>• Brand mention building</li>
+                            </ul>
+                            <div class="text-2xl font-bold teal-accent">$499/mo</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Technical SEO</h3>
+                            <p class="text-gray-300 text-sm mb-4">Optimize technical aspects for better performance</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Site speed optimization</li>
+                                <li>• Mobile optimization</li>
+                                <li>• Schema markup</li>
+                            </ul>
+                            <div class="text-2xl font-bold teal-accent">$399/mo</div>
+                        </div>
+                    </div>
+
+                    <!-- SEM/PPC Services -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-8">
+                            <div class="text-6xl mb-4">🎯</div>
+                            <h2 class="text-3xl font-bold teal-accent mb-4">SEM/PPC Ads</h2>
+                            <p class="text-gray-300">Paid advertising for instant results</p>
+                        </div>
+                        
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Google Ads</h3>
+                            <p class="text-gray-300 text-sm mb-4">Complete Google advertising management</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Search & Display campaigns</li>
+                                <li>• Shopping & YouTube ads</li>
+                                <li>• Performance optimization</li>
+                            </ul>
+                            <div class="text-lg font-bold teal-accent">$599/mo + ad spend</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Meta Ads</h3>
+                            <p class="text-gray-300 text-sm mb-4">Facebook & Instagram advertising</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Feed & Story ads</li>
+                                <li>• Lead generation campaigns</li>
+                                <li>• Retargeting strategies</li>
+                            </ul>
+                            <div class="text-lg font-bold teal-accent">$499/mo + ad spend</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">LinkedIn Ads</h3>
+                            <p class="text-gray-300 text-sm mb-4">Professional B2B advertising</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Sponsored content</li>
+                                <li>• InMail campaigns</li>
+                                <li>• Lead generation forms</li>
+                            </ul>
+                            <div class="text-lg font-bold teal-accent">$699/mo + ad spend</div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Services -->
+                    <div class="space-y-6">
+                        <div class="text-center mb-8">
+                            <div class="text-6xl mb-4">📱</div>
+                            <h2 class="text-3xl font-bold teal-accent mb-4">Social Media</h2>
+                            <p class="text-gray-300">Complete social media management</p>
+                        </div>
+                        
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Organic Social</h3>
+                            <p class="text-gray-300 text-sm mb-4">Build authentic engagement and community</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Content strategy & creation</li>
+                                <li>• Daily posting & scheduling</li>
+                                <li>• Community management</li>
+                            </ul>
+                            <div class="text-2xl font-bold teal-accent">$399/mo</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Paid Social</h3>
+                            <p class="text-gray-300 text-sm mb-4">Amplify reach with targeted campaigns</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Multi-platform advertising</li>
+                                <li>• Audience targeting</li>
+                                <li>• A/B testing & optimization</li>
+                            </ul>
+                            <div class="text-lg font-bold teal-accent">$499/mo + ad spend</div>
+                        </div>
+
+                        <div class="service-card p-6 rounded-xl card-hover">
+                            <h3 class="text-xl font-bold mb-3 teal-accent">Complete Package</h3>
+                            <p class="text-gray-300 text-sm mb-4">Full-service social media solution</p>
+                            <ul class="text-gray-300 space-y-1 text-sm mb-4">
+                                <li>• Organic + Paid strategies</li>
+                                <li>• Content creation & design</li>
+                                <li>• Comprehensive analytics</li>
+                            </ul>
+                            <div class="text-lg font-bold teal-accent">$799/mo + ad spend</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Solutions -->
+                <div class="mt-20">
+                    <h2 class="text-4xl font-bold text-center mb-12 teal-accent">Website Solutions</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="service-card p-8 rounded-xl text-center card-hover">
+                            <div class="text-4xl mb-4">🏢</div>
+                            <h3 class="text-xl font-bold mb-4 teal-accent">B2B Websites</h3>
+                            <p class="text-gray-300 mb-4">Professional business solutions</p>
+                            <div class="text-lg font-semibold teal-accent">From $1,999</div>
+                        </div>
+                        <div class="service-card p-8 rounded-xl text-center card-hover">
+                            <div class="text-4xl mb-4">👥</div>
+                            <h3 class="text-xl font-bold mb-4 teal-accent">B2C Websites</h3>
+                            <p class="text-gray-300 mb-4">Consumer-focused sites</p>
+                            <div class="text-lg font-semibold teal-accent">From $1,499</div>
+                        </div>
+                        <div class="service-card p-8 rounded-xl text-center card-hover">
+                            <div class="text-4xl mb-4">📦</div>
+                            <h3 class="text-xl font-bold mb-4 teal-accent">E-commerce</h3>
+                            <p class="text-gray-300 mb-4">Online stores & D2C</p>
+                            <div class="text-lg font-semibold teal-accent">From $2,499</div>
+                        </div>
+                        <div class="service-card p-8 rounded-xl text-center card-hover">
+                            <div class="text-4xl mb-4">🎨</div>
+                            <h3 class="text-xl font-bold mb-4 teal-accent">Custom Solutions</h3>
+                            <p class="text-gray-300 mb-4">Tailored to your needs</p>
+                            <div class="text-lg font-semibold teal-accent">Quote on Request</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-16">
+                    <button onclick="showPage('contact')" class="teal-bg hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                        Get Your Free Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contactPage" class="page">
+        <div class="py-16 bg-slate-800">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl font-bold mb-6">Get In <span class="teal-accent">Touch</span></h1>
+                    <p class="text-xl text-gray-300">Ready to boost your online presence? Let's discuss your project!</p>
+                </div>
+
+                <!-- Quick Contact Options -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="service-card p-8 rounded-xl text-center">
+                        <div class="text-5xl mb-4">📧</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">Email Us</h3>
+                        <p class="text-gray-300 mb-6">Get a detailed response within 24 hours</p>
+                        <a href="mailto:moon.gandhi123@gmail.com?subject=Digital Marketing Services Inquiry&body=Hi, I'm interested in your digital marketing services. Please contact me to discuss my project." 
+                           class="teal-bg hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Send Email
+                        </a>
+                    </div>
+                    <div class="service-card p-8 rounded-xl text-center">
+                        <div class="text-5xl mb-4">📱</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">WhatsApp</h3>
+                        <p class="text-gray-300 mb-6">Quick chat for immediate questions</p>
+                        <a href="https://wa.me/1234567890?text=Hi, I'm interested in your digital marketing services" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Chat Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="service-card p-8 rounded-xl">
+                    <h2 class="text-3xl font-bold text-center mb-8 teal-accent">Request a Free Quote</h2>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Full Name *</label>
+                                <input type="text" name="fullName" id="fullName" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                            </div>
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Email Address *</label>
+                                <input type="email" name="email" id="email" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                            </div>
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Website URL</label>
+                                <input type="url" name="website" id="website" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-4">Services Interested In *</label>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="seo" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">SEO Services</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="google-ads" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">Google Ads</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="meta-ads" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">Meta Ads</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="linkedin-ads" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">LinkedIn Ads</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="social-media" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">Social Media</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="services" value="website" class="w-5 h-5 text-teal-600 bg-slate-700 border-slate-600 rounded">
+                                    <span class="text-white">Website Development</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Monthly Budget Range</label>
+                            <select name="budget" id="budget" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-500">Under $500/month</option>
+                                <option value="500-1000">$500 - $1,000/month</option>
+                                <option value="1000-2500">$1,000 - $2,500/month</option>
+                                <option value="2500-5000">$2,500 - $5,000/month</option>
+                                <option value="over-5000">Over $5,000/month</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Project Details</label>
+                            <textarea name="message" id="message" rows="5" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus" placeholder="Tell us about your business goals, target audience, and what you'd like to achieve..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full teal-bg hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 pulse-animation">
+                            🚀 Get My Free Quote
+                        </button>
+                    </form>
+
+                    <div id="successMessage" class="hidden mt-8 p-6 bg-green-900 bg-opacity-50 border border-green-500 text-white rounded-lg">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">✅</div>
+                            <h3 class="text-2xl font-bold mb-4 text-green-400">Thank You!</h3>
+                            <p class="text-lg mb-4">Your inquiry has been sent successfully!</p>
+                            <p class="text-gray-300">We'll get back to you within 24 hours with a customized proposal for your digital marketing needs.</p>
+                            <button onclick="showPage('home')" class="mt-6 teal-bg hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300">
+                                Back to Home
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Page -->
+    <div id="socialPage" class="page">
+        <div class="py-16 bg-slate-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold mb-6">Connect With <span class="teal-accent">Rank Hoist</span></h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Follow us on social media for digital marketing tips, industry insights, and updates</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-6xl mb-4">📘</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">Facebook</h3>
+                        <p class="text-gray-300 mb-6">Follow for marketing tips and case studies</p>
+                        <a href="https://facebook.com/rankhoist" target="_blank" rel="noopener noreferrer" 
+                           class="social-btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Follow Us
+                        </a>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-6xl mb-4">📸</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">Instagram</h3>
+                        <p class="text-gray-300 mb-6">Visual content and behind-the-scenes</p>
+                        <a href="https://instagram.com/rankhoist" target="_blank" rel="noopener noreferrer" 
+                           class="social-btn bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Follow Us
+                        </a>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-6xl mb-4">💼</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">LinkedIn</h3>
+                        <p class="text-gray-300 mb-6">Professional insights and B2B content</p>
+                        <a href="https://linkedin.com/company/rankhoist" target="_blank" rel="noopener noreferrer" 
+                           class="social-btn bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Connect
+                        </a>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl text-center card-hover">
+                        <div class="text-6xl mb-4">🐦</div>
+                        <h3 class="text-2xl font-bold mb-4 teal-accent">Twitter/X</h3>
+                        <p class="text-gray-300 mb-6">Latest updates and quick tips</p>
+                        <a href="https://twitter.com/rankhoist" target="_blank" rel="noopener noreferrer" 
+                           class="social-btn bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
+                            Follow Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Media Content Preview -->
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Latest Posts -->
+                    <div class="service-card p-8 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-8 teal-accent text-center">Latest Posts</h2>
+                        <div class="space-y-6">
+                            <div class="bg-slate-700 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-2xl mr-3">📈</div>
+                                    <div>
+                                        <h4 class="font-bold text-white">SEO Tip of the Day</h4>
+                                        <p class="text-sm text-gray-400">2 hours ago</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300">"Focus on user intent when creating content. Google rewards pages that truly answer what users are searching for. Quality over quantity always wins! #SEO #ContentMarketing"</p>
+                            </div>
+
+                            <div class="bg-slate-700 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-2xl mr-3">🎯</div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Google Ads Update</h4>
+                                        <p class="text-sm text-gray-400">1 day ago</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300">"New Performance Max campaigns are showing 20% better results for our e-commerce clients. The AI optimization is getting smarter! #GoogleAds #PPC"</p>
+                            </div>
+
+                            <div class="bg-slate-700 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-2xl mr-3">📱</div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Social Media Strategy</h4>
+                                        <p class="text-sm text-gray-400">3 days ago</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300">"Consistency is key in social media marketing. Post regularly, engage with your audience, and always provide value. Your followers will thank you! #SocialMedia"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="service-card p-8 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-8 teal-accent text-center">Stay Updated</h2>
+                        <div class="text-center mb-8">
+                            <div class="text-6xl mb-4">📧</div>
+                            <h3 class="text-2xl font-bold mb-4 text-white">Weekly Newsletter</h3>
+                            <p class="text-gray-300 mb-6">Get the latest digital marketing tips, case studies, and industry insights delivered to your inbox every week.</p>
+                        </div>
+
+                        <form id="newsletterForm" class="space-y-4">
+                            <div>
+                                <input type="email" name="newsletterEmail" id="newsletterEmail" required 
+                                       class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus" 
+                                       placeholder="Enter your email address">
+                            </div>
+                            <div>
+                                <select name="interests" id="interests" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg teal-focus">
+                                    <option value="">What interests you most?</option>
+                                    <option value="seo">SEO Tips & Strategies</option>
+                                    <option value="ppc">PPC & Google Ads</option>
+                                    <option value="social">Social Media Marketing</option>
+                                    <option value="all">All Digital Marketing</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full teal-bg hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                                Subscribe Now
+                            </button>
+                        </form>
+
+                        <div id="newsletterSuccess" class="hidden mt-6 p-4 bg-green-900 bg-opacity-50 border border-green-500 text-white rounded-lg text-center">
+                            <div class="text-3xl mb-2">✅</div>
+                            <h4 class="font-bold text-green-400 mb-2">Subscribed!</h4>
+                            <p class="text-sm text-gray-300">Thank you for subscribing! Check your email for confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-16">
+                    <h2 class="text-3xl font-bold mb-6 text-white">Ready to Work Together?</h2>
+                    <p class="text-xl text-gray-300 mb-8">Let's discuss how we can help grow your business online</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="showPage('contact')" class="teal-bg hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                            Get Free Quote
+                        </button>
+                        <button onclick="showPage('services')" class="bg-transparent border-2 border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                            View Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">🚀 <span class="teal-accent">Rank Hoist</span></h3>
+                    <p class="text-gray-400 mb-4">Expert freelance digital marketing services to boost your online presence. Specializing in <span class="teal-accent">SEO, SEM, and Social Media Marketing</span>.</p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:moon.gandhi123@gmail.com" class="text-teal-400 hover:text-teal-300 text-2xl">📧</a>
+                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 text-2xl">📱</a>
+                        <a href="https://linkedin.com/company/rankhoist" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 text-2xl">💼</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4"><span class="teal-accent">Quick Links</span></h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" onclick="showPage('home')" class="hover:text-teal-400 transition-colors">Home</a></li>
+                        <li><a href="#" onclick="showPage('services')" class="hover:text-teal-400 transition-colors">Our Services</a></li>
+                        <li><a href="#" onclick="showPage('contact')" class="hover:text-teal-400 transition-colors">Contact Us</a></li>
+                        <li><a href="#" onclick="showPage('social')" class="hover:text-teal-400 transition-colors">Social Media</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4"><span class="teal-accent">Contact Info</span></h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 <span class="teal-accent">moon.gandhi123@gmail.com</span></p>
+                        <p>🌍 Serving clients worldwide</p>
+                        <p>⏰ Quick response within 24 hours</p>
+                        <p>💬 Free consultation available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-teal-600 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2024 <span class="teal-accent">Rank Hoist</span> - Professional Freelance Digital Marketing Services. All rights reserved.</p>
+                <p class="text-gray-600 text-xs mt-2">Boost your online presence with expert <span class="teal-accent">digital marketing strategies</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Navigation
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId + 'Page');
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            
+            // Update navigation active state
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('text-teal-400');
+                link.classList.add('text-white');
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                website: document.getElementById('website').value,
+                services: Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value),
+                message: document.getElementById('message').value,
+                budget: document.getElementById('budget').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Validate required fields
+            if (!formData.fullName || !formData.email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            if (formData.services.length === 0) {
+                alert('Please select at least one service you\'re interested in.');
+                return;
+            }
+            
+            // Create email body with all form data
+            const emailBody = `
+New Digital Marketing Service Inquiry - Rank Hoist
+
+Client Information:
+- Name: ${formData.fullName}
+- Email: ${formData.email}
+- Phone: ${formData.phone || 'Not provided'}
+- Website: ${formData.website || 'Not provided'}
+
+Services Interested In:
+${formData.services.map(service => `- ${service.charAt(0).toUpperCase() + service.slice(1)}`).join('\n')}
+
+Budget Range: ${formData.budget || 'Not specified'}
+
+Project Details:
+${formData.message || 'No additional details provided'}
+
+Submitted on: ${new Date().toLocaleString()}
+            `.trim();
+            
+            // Store data locally for backup
+            const submissions = JSON.parse(localStorage.getItem('rankHoistSubmissions') || '[]');
+            submissions.push(formData);
+            localStorage.setItem('rankHoistSubmissions', JSON.stringify(submissions));
+            
+            // Create mailto link with formatted data
+            const mailtoLink = `mailto:moon.gandhi123@gmail.com?subject=New Digital Marketing Inquiry from ${formData.fullName}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.open(mailtoLink, '_blank');
+            
+            // Show success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').classList.remove('hidden');
+            
+            // Log submission data for demo purposes
+            console.log('Form submitted with data:', formData);
+        });
+
+        // Newsletter Form Handler
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletterEmail').value;
+            const interests = document.getElementById('interests').value;
+            
+            if (!email) {
+                alert('Please enter your email address.');
+                return;
+            }
+            
+            // Store newsletter subscription
+            const subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions') || '[]');
+            subscriptions.push({
+                email: email,
+                interests: interests,
+                timestamp: new Date().toISOString()
+            });
+            localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+            
+            // Create mailto for newsletter subscription
+            const emailBody = `
+Newsletter Subscription Request - Rank Hoist
+
+Email: ${email}
+Interests: ${interests || 'All Digital Marketing'}
+Subscribed on: ${new Date().toLocaleString()}
+            `.trim();
+            
+            const mailtoLink = `mailto:moon.gandhi123@gmail.com?subject=Newsletter Subscription Request&body=${encodeURIComponent(emailBody)}`;
+            window.open(mailtoLink, '_blank');
+            
+            // Show success message
+            document.getElementById('newsletterForm').style.display = 'none';
+            document.getElementById('newsletterSuccess').classList.remove('hidden');
+            
+            console.log('Newsletter subscription:', { email, interests });
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show home page by default
+            showPage('home');
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'985b96a3b5a3a2ad',t:'MTc1ODk4MjI2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+</html>
